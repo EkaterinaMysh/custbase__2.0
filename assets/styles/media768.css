@@ -37,7 +37,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 30px;
+	padding-top: 1%;
 	width: 100%;
 }
 .ms_menu2__contdown{
@@ -124,14 +124,13 @@
 }
 
 .descript__name{
-	margin-top: 21px;
 	font-size: 35px;
-	margin-bottom: 22px;
+	margin: 2% 0;
 }
 
 .descript__info{
 	font-size: 18px;
-	margin-bottom: 29px;
+	margin-bottom: 5%;
 }
 
 .descript__btn{
@@ -144,11 +143,10 @@
 	color: white;
 	box-shadow: 0 0 0 13px rgba(100, 226, 205, 0.5);
 }
-	
-.review{	
-	position: absolute;
+.review{
 	bottom:15%;
-	left: 7%;
+	left: 7%;	
+	position: absolute;
 	width: 231px;
 	height: 231px;
 	border-radius: 50%;
@@ -157,11 +155,46 @@
 	color: #2F80ED;
 	text-align: center;
 }
+}
 
-	
+@media screen and (max-width:700px) and (min-width: 501px)
+{
+.review{
+	left:50%;
+	transform:translateX(-50%);
+	bottom: 0%;
+}
+.descript__container{
+	width: 70%;
+}
+.descript{
+	margin-top: 5%;
+}
+.descript__name{
+	font-size: 30px;
+}
+.descript__btn{
+	width: 192px;
+	height: 50px;
+}
+}
+
+@media screen and (max-width:700px) and (min-width: 601px)
+{
+.descript{
+	margin-top: 10%;
+}
+.descript__container{
+	width: 65%;
+}
+.review{
+	bottom: 5%;
+}
+}
 
 
-
+@media screen and (max-width: 1099px) and (min-width: 501px)
+{
 .marketfit{
 	display: flex;
 	flex-direction: column;
@@ -362,15 +395,7 @@
 	letter-spacing: 0.05em;
 }
 .ac__ellipse1{
-	position: absolute;
-	width: 125px;
-	height: 125px;
-	right: -62.5px;
-	top: -62.5px;
-	background: radial-gradient(68.31% 68.31% at 50% 50%, #6AAAFF 0%, #2F80ED 100%), #FFFFFF;
-	opacity: 0.1;
-	border-radius: 50%;
-	box-shadow: 0px 10px 50px rgba(119, 157, 255, 0.3)
+	display: none;
 }
 
 .ac__ellipse2{
